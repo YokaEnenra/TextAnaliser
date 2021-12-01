@@ -1,0 +1,27 @@
+﻿<Window x:Class="RGZ_Real.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RGZ_Real"
+        mc:Ignorable="d"
+        Title="Аналізатор Текстів" Height="450" Width="995" ResizeMode="CanMinimize"  Icon="/15503.png">
+    <Grid>
+
+        <TextBox x:Name="TextOnScreen" Margin="10,10,0,10" TextWrapping="Wrap" HorizontalAlignment="Left" Width="524"/>
+        <Button x:Name="OpenFile" Content="Обрати файл" Margin="551,10,0,0" Click="OpenFile_Click" HorizontalAlignment="Left" Width="145" Height="60" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="24"/>
+        <CheckBox x:Name="ParagraphsCheck" Content="Абзаци" Margin="551,160,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Width="76"/>
+        <CheckBox x:Name="SentencesCheck" Content="Речення" Margin="551,185,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Width="82"/>
+        <CheckBox x:Name="WordsCheck" Content="Слова" Margin="551,209,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Width="66"/>
+        <CheckBox x:Name="LettersCheck" Content="Букви" Margin="551,234,0,0" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" VerticalAlignment="Top" Width="66"/>
+        <CheckBox x:Name="CommasCheck" Content="Коми" Margin="551,260,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Width="61"/>
+        <CheckBox x:Name="QuestionsCheck" Content="Знаки питання" Margin="551,285,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Width="132"/>
+        <CheckBox x:Name="ExclamationsCheck" Content="Знаки оклику" Margin="551,310,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Times New Roman" HorizontalAlignment="Left" Width="123"/>
+        <Button x:Name="ProcessFile" Content="Підрахувати" Margin="551,335,0,0" HorizontalAlignment="Left" Width="145" Height="60" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="24" Click="ProcessFile_Click"/>
+        <Label Content="Оберіть параметри, " HorizontalAlignment="Left" Margin="551,104,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" Width="181"/>
+        <Label Content="що необхідно підрахувати:" HorizontalAlignment="Left" Margin="551,127,0,0" FontFamily="Times New Roman" FontSize="18" Width="213" Height="31" VerticalAlignment="Top"/>
+        <Button x:Name="DisplayText" Content="Вивести текст" Margin="735,10,0,0" HorizontalAlignment="Left" Width="150" Height="60" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="24" Click="DisplayText_Click"/>
+        <Button x:Name="SaveInfo" Content="Зберегти інформацію" Margin="735,335,0,0" HorizontalAlignment="Left" Width="232" Height="60" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="24" Click="SaveInfo_Click"/>
+
+    </Grid>
+</Window>
